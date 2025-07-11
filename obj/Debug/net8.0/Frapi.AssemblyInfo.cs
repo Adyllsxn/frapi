@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Frapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fed4ec32bff867447096a1f81ddb75a252a6396")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b72505484f6311fa9cc96ff24a624d23b15fbea")]
 [assembly: System.Reflection.AssemblyProductAttribute("Frapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Frapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
