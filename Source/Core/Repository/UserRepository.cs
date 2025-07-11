@@ -1,5 +1,5 @@
 namespace Frapi.Source.Core.Repository;
-public class UserRepository(AppDbContext context)
+public class UserRepository(AppDbContext context) : IUserRepository
 {
     #region GetAllAsync
         public async Task<List<UserModel>> GetAllAsync()
