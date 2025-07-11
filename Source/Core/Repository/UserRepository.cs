@@ -15,6 +15,15 @@ public class UserRepository(AppDbContext context)
         }
     #endregion
 
+    #region GetByNameAsync
+        public async Task<List<UserModel>> GetByNameAsync(string name)
+        {
+            return await context.Users
+                .Where(u => u.FirstName.ToLower().Contains(name.ToLower()))
+                .ToListAsync();
+        }
+    #endregion
+
     #region CreateAsync
         public async Task<UserModel> CreateAsync(UserModel user)
         {
