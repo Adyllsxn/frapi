@@ -1,6 +1,6 @@
 namespace Frapi.Source.Core.Model
 {
-    public class UserModel
+    public class PublicUserModel
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();

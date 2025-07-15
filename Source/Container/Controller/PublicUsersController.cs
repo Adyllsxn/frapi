@@ -2,7 +2,7 @@ namespace Frapi.Source.Container.Controller
 {
     [ApiController]
     [Route("api/")]
-    public class UsersController(IUserRepository repository) : ControllerBase
+    public class UsersController(IPublicUserRepository repository) : ControllerBase
     {
         #region List
             [HttpGet("ListUser")]
@@ -40,7 +40,7 @@ namespace Frapi.Source.Container.Controller
         #region Create
             [HttpPost("CreateUser")]
             [EndpointSummary("Create a new user")]
-            public async Task<ActionResult> CreateUser([FromBody] UserModel model)
+            public async Task<ActionResult> CreateUser([FromBody] PublicUserModel model)
             {
                 var created = await repository.CreateAsync(model);
                 return CreatedAtAction(nameof(GetByIdUser), new { id = created.Id }, created);
@@ -50,7 +50,7 @@ namespace Frapi.Source.Container.Controller
         #region Edit
             [HttpPut("EditUser")]
             [EndpointSummary("Edit user data")]
-            public async Task<ActionResult> EditUser([FromBody] UserModel model)
+            public async Task<ActionResult> EditUser([FromBody] PublicUserModel model)
             {
                 var updated = await repository.UpdateAsync(model);
                 if (!updated)

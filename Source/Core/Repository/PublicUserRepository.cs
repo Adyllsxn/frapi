@@ -1,22 +1,22 @@
 namespace Frapi.Source.Core.Repository;
-public class UserRepository(AppDbContext context) : IUserRepository
+public class PublicUserRepository(AppDbContext context) : IPublicUserRepository
 {
     #region GetAllAsync
-        public async Task<List<UserModel>> GetAllAsync()
+        public async Task<List<PublicUserModel>> GetAllAsync()
         {
             return await context.Users.ToListAsync();
         }
     #endregion
 
     #region GetByIdAsync    
-        public async Task<UserModel?> GetByIdAsync(Guid id)
+        public async Task<PublicUserModel?> GetByIdAsync(Guid id)
         {
             return await context.Users.FindAsync(id);
         }
     #endregion
 
     #region GetByNameAsync
-        public async Task<List<UserModel>> GetByNameAsync(string name)
+        public async Task<List<PublicUserModel>> GetByNameAsync(string name)
         {
             return await context.Users
                 .Where(u => u.FirstName.ToLower().Contains(name.ToLower()))
@@ -25,7 +25,7 @@ public class UserRepository(AppDbContext context) : IUserRepository
     #endregion
 
     #region CreateAsync
-        public async Task<UserModel> CreateAsync(UserModel user)
+        public async Task<PublicUserModel> CreateAsync(PublicUserModel user)
         {
             user.Id = Guid.NewGuid();
             context.Users.Add(user);
@@ -35,7 +35,7 @@ public class UserRepository(AppDbContext context) : IUserRepository
     #endregion
 
     #region UpdateAsync
-        public async Task<bool> UpdateAsync(UserModel user)
+        public async Task<bool> UpdateAsync(PublicUserModel user)
         {
             var existing = await context.Users.FindAsync(user.Id);
             if (existing == null) return false;
