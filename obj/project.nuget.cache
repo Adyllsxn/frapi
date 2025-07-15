@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RM3eRft8TY4UGPuq6QnqfVlcKjdAaZNy0qj1S0RnajjIx4F9HufPAIqiCVLE0aPhg3QSWe2BfWxZSFf1s9xKmA==",
+  "dgSpecHash": "dzZQFJ2AQLuLCN0GvwzgybowgbQ/Z3OmjpAe+4YK1InJ/HbieSipx7naHeE43NYcs8QkKijjJUxtEU905uEmng==",
   "success": true,
-  "projectFilePath": "/home/adyllsxn/Developer/Frapi/Frapi.csproj",
+  "projectFilePath": "/home/adyllsxn/Developer/frapi/Frapi.csproj",
   "expectedPackageFiles": [
     "/home/adyllsxn/.nuget/packages/microsoft.entityframeworkcore/8.0.14/microsoft.entityframeworkcore.8.0.14.nupkg.sha512",
     "/home/adyllsxn/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.14/microsoft.entityframeworkcore.abstractions.8.0.14.nupkg.sha512",

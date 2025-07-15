@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/adyllsxn/Developer/Frapi/Frapi.csproj": {}
+    "/home/adyllsxn/Developer/frapi/Frapi.csproj": {}
   },
   "projects": {
-    "/home/adyllsxn/Developer/Frapi/Frapi.csproj": {
+    "/home/adyllsxn/Developer/frapi/Frapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/adyllsxn/Developer/Frapi/Frapi.csproj",
+        "projectUniqueName": "/home/adyllsxn/Developer/frapi/Frapi.csproj",
         "projectName": "Frapi",
-        "projectPath": "/home/adyllsxn/Developer/Frapi/Frapi.csproj",
+        "projectPath": "/home/adyllsxn/Developer/frapi/Frapi.csproj",
         "packagesPath": "/home/adyllsxn/.nuget/packages/",
-        "outputPath": "/home/adyllsxn/Developer/Frapi/obj/",
+        "outputPath": "/home/adyllsxn/Developer/frapi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/adyllsxn/.nuget/NuGet/NuGet.Config"
