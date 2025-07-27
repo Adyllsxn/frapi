@@ -1,8 +1,8 @@
 namespace Frapi.Source.Core.Context;
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    public DbSet<PublicUserModel> Users { get; set; }
-
+        public DbSet<PublicUserModel> Users { get; set; }
+    
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

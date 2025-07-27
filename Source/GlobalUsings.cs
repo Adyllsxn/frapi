@@ -1,12 +1,14 @@
 #region Systema
     global using System.ComponentModel.DataAnnotations;
     global using System.Text.Json.Serialization;
+    global using BCrypt.Net;
 #endregion
 
 #region Microsoft
     global using Microsoft.EntityFrameworkCore;
     global using Microsoft.AspNetCore.Mvc;
     global using Microsoft.OpenApi.Models;
+    global using Microsoft.AspNetCore.Authorization;
 #endregion
 
 #region Frapi

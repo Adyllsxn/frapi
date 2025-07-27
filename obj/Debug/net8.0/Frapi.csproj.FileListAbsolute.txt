@@ -40,3 +40,4 @@
 /home/adyllsxn/Developer/Frapi/obj/Debug/net8.0/Frapi.pdb
 /home/adyllsxn/Developer/Frapi/obj/Debug/net8.0/Frapi.genruntimeconfig.cache
 /home/adyllsxn/Developer/Frapi/obj/Debug/net8.0/ref/Frapi.dll
+/home/adyllsxn/Developer/frapi/bin/Debug/net8.0/BCrypt.Net-Next.dll
